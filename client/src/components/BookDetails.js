@@ -7,9 +7,9 @@ function BookDetails(props){
       id: props.bookId
     }
   });
+  function displayBookDetails() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error</p>;
-  function displayBookDetails() {
    const { book } = data;
    if(book) {
      console.log(book)
